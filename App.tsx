@@ -1,14 +1,14 @@
 import { Switch, Route } from "wouter";
 import { queryClient } from "/lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClientProvider } from "/tanstack/react-query";
+import { Toaster } from "/components/ui/toaster";
+import { TooltipProvider } from "/components/ui/tooltip";
 import { useState } from "react";
-import Dashboard from "@/pages/dashboard";
-import Onboarding from "@/pages/onboarding";
-import Training from "@/pages/training";
-import NotFound from "@/pages/not-found";
-import type { User } from "@/lib/types";
+import Dashboard from "/pages/dashboard";
+import Onboarding from "/pages/onboarding";
+import Training from "/pages/training";
+import NotFound from "/pages/not-found";
+import type { User } from "/lib/types";
 
 function Router() {
   const [user, setUser] = useState<User | null>(() => {
